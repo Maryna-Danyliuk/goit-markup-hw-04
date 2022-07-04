@@ -122,7 +122,7 @@ address {
 .contacts {
   display: flex;
   margin-left: auto;
-
+  justify-content: center;
   padding: 32px 0;
 }
 .contact-item {
@@ -138,7 +138,20 @@ address {
 .hover-link:focus a {
   color: var(--logo-first-part-color-blue);
 }
-
+.icon.contact {
+  width: 16px;
+  height: 12px;
+  fill: var(--navigate-contacts-color);
+  margin-right: 10px;
+  text-align: center;
+}
+.icon.contact:first {
+  width: 10px;
+  height: 16px;
+  /* fill: var(--navigate-contacts-color);
+  margin-right: 10px;
+  text-align: center; */
+}
 /* .contact-item:first-child {
   margin-right: 50px;
 } */
@@ -160,6 +173,7 @@ address {
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--add-service-background-color);
+  background-image: url(../images/Img-backgound.svg);
 }
 .add-sevice-title {
   display: block;
