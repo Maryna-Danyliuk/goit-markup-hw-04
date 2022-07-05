@@ -313,29 +313,36 @@ section.activity {
   display: flex;
   margin-top: 16px;
   margin-bottom: 30px;
+  justify-content: center;
+  margin-left: 0;
 }
 .socialmedia-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
   width: 44px;
   height: 44px;
-  display: flex;
-
-  fill: var(--social-media-color);
+  border-radius: 50%;
+  background-color: black;
+  /* fill: var(--social-media-color); */
+  fill: white;
 }
 
 .socialmedia-icon {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin-right: 10px;
-  padding: 12px 12px;
+  /* padding: 12px 12px; */
 }
-.socialmedia-icon:hover {
+/* .socialmedia-icon:hover {
   display: flex;
 
   background-color: var(--logo-first-part-color-blue);
   fill: var(--background-color);
-  border-radius: 50%;
+  
   align-items: center;
-}
+} */
 /* Clients */
 .clients-title {
   font-weight: 700;
