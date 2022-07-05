@@ -10,6 +10,7 @@
   --background-btn-color: #f5f4fa;
   --background-portfolio-list-color: #eeeeee;
   --hover-add-service-btn-background: #188ce8;
+  --social-media-color: #afb1b8;
   --padding-vertical-container: 94px;
   --size-padding-portfolio: 300px;
   --item-portfolio-count: 5;
@@ -174,6 +175,8 @@ address {
   text-align: center;
   background-color: var(--add-service-background-color);
   background-image: url(../images/Img-backgound.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .add-sevice-title {
   display: block;
@@ -211,6 +214,15 @@ address {
   padding-left: 0;
   padding-right: 0;
 }
+.benefits-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-btn-color);
+  background-size: 270px 120px;
+  padding: 25px 100px;
+}
+
 .benefits-items {
   display: flex;
 }
@@ -298,6 +310,25 @@ section.activity {
 }
 .last {
   margin-right: 0;
+}
+.socialmedia.list {
+  display: inline-flex;
+  outline: 1px solid orange;
+  width: 206px;
+  height: 44px;
+  margin-top: 16px;
+}
+.socialmedia-links {
+  width: 44px;
+  height: 44px;
+  /* display: flex;
+  align-items: center; */
+  border-radius: 50%;
+  background-color: #188ce8;
+  fill: var(--social-media-color);
+}
+.socialmedia-icon {
+  margin-right: 10px;
 }
 
 /* Portfolio */
