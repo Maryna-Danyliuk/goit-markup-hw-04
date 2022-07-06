@@ -178,7 +178,7 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: linear-gradient(to bottom, #2f303a66, #2f303a66);
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66);
   background-image: url(../images/Img-backgound.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,6 +326,7 @@ section.activity {
   align-items: center;
   justify-content: center;
   padding: 12px;
+
   width: 44px;
   height: 44px;
 
@@ -373,6 +374,9 @@ section.activity {
 .clients-icon-link:hover .clients-icon,
 .clients-icon-link:focus .clients-icon {
   fill: var(--logo-first-part-color-blue);
+}
+.clients-links:hover,
+.clients-links:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--logo-first-part-color-blue);
   border-radius: 4px;
