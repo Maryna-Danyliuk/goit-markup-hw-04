@@ -26,22 +26,34 @@
           <a href="./index.html" class="logo-header logo link">
             <span class="logo-first">Web</span><span class="logo-second">Studio</span>
           </a>
-          <ul class="navigate lists list">
+          <ul class="navigate list lists">
             <li class="navigate-item hover-link">
               <a class="navigate link" href="./index.html">Студия</a>
             </li>
             <li class="navigate-item hover-link">
               <a class="navigate link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navigate-item hover-link"><a class="navigate link" href="#">Контакты</a></li>
+            <li class="navigate-item hover-link link">
+              <a class="navigate link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li class="hover-link first-contact">
-            <a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-item link" href="mailto:info@devstudio.com"
+              ><svg class="icon contact">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="hover-link">
-            <a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a aria-label="emaill" class="contact-item link" href="tel:+380961111111"
+              ><svg class="icon contact">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -140,29 +152,67 @@
     </main>
     <footer class="main-footer">
       <div class="container footer">
-        <a href="index.html" class="logo foot link">
-          <span class="logo-first">Web</span><span class="logo-third">Studio</span>
-        </a>
-        <address>
-          <ul class="adress list">
-            <li class="adress-list hover-link">
-              <a
-                class="map link"
-                href="https://goo.gl/maps/BUU7MnYP6HP1QaoV9"
-                target="_blank"
-                rel="external"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="adress-list hover-link">
-              <a class="adress-item link" href="mailto:info@example.com">info@example.com</a>
-            </li>
+        <div class="footer-adress-contact">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <a href="index.html" class="logo foot link">
+            <span class="logo-first">Web</span><span class="logo-third">Studio</span>
+          </a>
+          <address class="address-cont">
+            <ul class="adress list">
+              <li class="adress-list hover-link">
+                <a
+                  class="map link"
+                  href="https://goo.gl/maps/BUU7MnYP6HP1QaoV9"
+                  target="_blank"
+                  rel="external"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="adress-list hover-link">
+                <a class="adress-item link" href="mailto:info@example.com">info@example.com</a>
+              </li>
 
-            <li class="adress-list hover-link">
-              <a class="adress-item link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="adress-list hover-link">
+                <a class="adress-item link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-media">
+          <div class="tittle-social-media-continer">
+            <h3 class="tittle-social-media">присоединяйтесь</h3>
+          </div>
+          <ul class="social-media list">
+            <li class="socialmedia-icon foots">
+              <a href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <svg class="socialmedia-links">
+                  <use class="socialmedia-icon-one" href="/images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-icon foots">
+              <a href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                <svg class="socialmedia-links">
+                  <use class="socialmedia-icon-one" href="/images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-icon foots">
+              <a href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                <svg class="socialmedia-links">
+                  <use class="socialmedia-icon-one" href="/images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-icon foots last">
+              <a href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <svg class="socialmedia-links">
+                  <use class="socialmedia-icon-one" href="/images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

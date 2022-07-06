@@ -323,26 +323,22 @@ section.activity {
   padding: 12px;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background-color: black;
-  /* fill: var(--social-media-color); */
-  fill: white;
+
+  /* background-color: black; */
+  fill: var(--social-media-color);
 }
 
 .socialmedia-icon {
-  /* display: flex;
-  align-items: center; */
   margin-right: 10px;
-  /* padding: 12px 12px; */
 }
-/* .socialmedia-icon:hover {
+.socialmedia-icon:hover {
   display: flex;
-
   background-color: var(--logo-first-part-color-blue);
   fill: var(--background-color);
-  
   align-items: center;
-} */
+  border-radius: 50%;
+}
+
 /* Clients */
 .clients-title {
   font-weight: 700;
@@ -364,7 +360,8 @@ section.activity {
   margin-right: 30px;
   fill: var(--social-media-color);
   border: 1px solid var(--social-media-color);
-  border-radius: 3%;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* .clients-links:hover,
 .clients-links:focus {
@@ -454,9 +451,17 @@ section.activity {
 }
 /* Footer */
 .main-footer {
+  display: flex;
   background-color: var(--add-service-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.container.footer {
+  display: flex;
+}
+
+.footer-adress-contact {
+  margin-right: 70px;
 }
 .logo.foot {
   display: block;
@@ -467,7 +472,6 @@ section.activity {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
   color: var(--footer-addres-color);
 }
@@ -483,6 +487,43 @@ section.activity {
   font-size: 26px;
   line-height: 1.19;
   color: var(--background-color);
+}
+.footer-social-media {
+  width: 206px;
+  padding-top: 15px;
+  justify-content: center;
+}
+address-cont {
+  margin-right: 70px;
+}
+.tittle-social-media-continer {
+  display: block;
+  text-align: center;
+}
+.tittle-social-media {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  justify-content: center;
+  margin: auto;
+}
+
+.socialmedia-icon.foots {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.socialmedia-icon-one {
+  fill: var(--background-color);
+}
+.socialmedia-icon.foots:hover {
+  background-color: var(--logo-first-part-color-blue);
 }
 .last {
   margin-right: 0;
