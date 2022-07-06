@@ -66,6 +66,7 @@ address {
 }
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 /*======================================================================== */
 /* Header */
@@ -139,6 +140,7 @@ address {
 .hover-link:focus a {
   color: var(--logo-first-part-color-blue);
 }
+
 .icon.contact {
   width: 16px;
   height: 12px;
@@ -173,7 +175,7 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--add-service-background-color);
+  background: linear-gradient(to bottom, #2f303a66, #2f303a66);
   background-image: url(../images/Img-backgound.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -402,6 +404,7 @@ section.activity {
 .button-filter:focus {
   color: var(--background-color);
   background-color: var(--logo-first-part-color-blue);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-item h2 {
@@ -448,6 +451,10 @@ section.activity {
 }
 .btn-list {
   margin-right: 8px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* Footer */
 .main-footer {
@@ -498,7 +505,6 @@ address-cont {
 }
 .tittle-social-media-continer {
   display: block;
-  text-align: center;
 }
 .tittle-social-media {
   font-family: 'Roboto';
