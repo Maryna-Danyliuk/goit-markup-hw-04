@@ -324,25 +324,27 @@ section.activity {
 }
 .socialmedia-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 11px;
 
-  width: 44px;
-  height: 44px;
-
+  width: 20px;
+  height: 20px;
   fill: var(--social-media-color);
 }
 
 .socialmedia-icon {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
+
+  padding: 10px;
 }
 .socialmedia-icon:hover .socialmedia-links,
 .socialmedia-icon:focus .socialmedia-links {
   display: flex;
-  background-color: var(--logo-first-part-color-blue);
   fill: var(--background-color);
   align-items: center;
+}
+.socialmedia-icon:hover {
+  background-color: var(--logo-first-part-color-blue);
   border-radius: 50%;
 }
 
