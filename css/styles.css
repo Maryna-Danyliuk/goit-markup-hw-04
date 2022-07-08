@@ -140,27 +140,17 @@ address {
 .hover-link:focus a {
   color: var(--logo-first-part-color-blue);
 }
-.contact-item:hover .icon.contact,
-.contact-item:focus .icon.contact {
-  fill: var(--logo-first-part-color-blue);
-}
+
 .icon.contact {
   width: 16px;
   height: 14px;
-  fill: var(--navigate-contacts-color);
+  fill: currentColor;
   margin-right: 10px;
   text-align: center;
 }
-/* .icon.contact:first {
-  width: 10px;
-  height: 20px;
-  fill: var(--navigate-contacts-color);
-  margin-right: 10px;
-  text-align: center; 
-} 
-/* .contact-item:first-child {
-  margin-right: 50px;
-} */
+.contact-item:hover .contact-item:focus {
+  color: var(--logo-first-part-color-blue);
+}
 .adres-contact a {
   font-weight: 500;
   line-height: 1.14;
@@ -175,11 +165,13 @@ address {
 /* Add service */
 
 .section.add-service {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66);
-  background-image: url(../images/Img-backgound.svg);
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66), url(../images/Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -314,40 +306,41 @@ section.activity {
   color: var(--navigate-contacts-color);
   margin-top: 10px;
 }
+/* socialmedia-item
 
-.social-media {
+*/
+.social-media-list {
   display: flex;
-  margin-top: 16px;
+  margin-top: 20px;
   margin-bottom: 30px;
   justify-content: center;
   margin-left: 0;
 }
-.socialmedia-links {
-  display: flex;
-
-  width: 20px;
-  height: 20px;
-  fill: var(--social-media-color);
-}
-
-.socialmedia-icon {
+.social-media-item:not(:last-child) {
+  fill: currentColor;
   margin-right: 10px;
+}
+.social-media-link {
+  display: flex;
   width: 44px;
   height: 44px;
-
-  padding: 10px;
-}
-.socialmedia-icon:hover .socialmedia-links,
-.socialmedia-icon:focus .socialmedia-links {
-  display: flex;
-  fill: var(--background-color);
+  color: var(--social-media-color);
+  justify-content: center;
   align-items: center;
 }
-.socialmedia-icon:hover {
+
+.social-media-link:hover,
+.social-media-link:focus {
+  border: 1px solid var(--logo-first-part-color-blue);
   background-color: var(--logo-first-part-color-blue);
   border-radius: 50%;
+  color: var(--background-color);
 }
-
+.social-media-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
 /* Clients */
 .clients-title {
   font-weight: 700;
@@ -356,34 +349,36 @@ section.activity {
   text-align: center;
   margin-bottom: 50px;
 }
-
-.clients {
+.clients-list {
   display: flex;
+  justify-content: center;
+  margin-left: 0;
 }
-.clients-links {
+.clients-item:not(:last-child) {
+  fill: currentColor;
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
-  fill: var(--social-media-color);
+  color: var(--social-media-color);
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--social-media-color);
   border-radius: 4px;
-  cursor: pointer;
 }
-.clients-icon-li {
-  display: flex;
-  margin-right: 30px;
-  fill: var(--social-media-color);
-}
-.clients-icon-link:hover .clients-icon,
-.clients-icon-link:focus .clients-icon {
-  fill: var(--logo-first-part-color-blue);
-}
-.clients-links:hover,
-.clients-links:focus {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.clients-link:hover {
+  color: var(--logo-first-part-color-blue);
   border: 1px solid var(--logo-first-part-color-blue);
   border-radius: 4px;
 }
+.clients-icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+
 /* Portfolio */
 
 .portfolio-btn {
@@ -474,6 +469,7 @@ section.activity {
 }
 .container.footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-adress-contact {
@@ -509,7 +505,7 @@ section.activity {
   padding-top: 15px;
   justify-content: center;
 }
-address-cont {
+.address-cont {
   margin-right: 70px;
 }
 .tittle-social-media-continer {
@@ -520,25 +516,23 @@ address-cont {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
+
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 20px;
   justify-content: center;
   margin: auto;
 }
-
-.socialmedia-icon.foots {
+.social-media-link.foot {
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--background-color);
+}
+.social-media-link.foot:hover {
+  background: var(--logo-first-part-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-}
-.socialmedia-icon-one {
-  fill: var(--background-color);
-}
-.socialmedia-icon.foots:hover {
-  background-color: var(--logo-first-part-color-blue);
 }
 .last {
   margin-right: 0;
