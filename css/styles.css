@@ -136,10 +136,6 @@ address {
 .first-contact {
   margin-right: 50px;
 }
-.hover-link:hover a,
-.hover-link:focus a {
-  color: var(--logo-first-part-color-blue);
-}
 
 .icon.contact {
   width: 16px;
@@ -148,7 +144,10 @@ address {
   margin-right: 10px;
   text-align: center;
 }
-.contact-item:hover .contact-item:focus {
+.contact-item:hover,
+.navigate.link:hover,
+.contact-item:focus,
+.navigate.link:focus {
   color: var(--logo-first-part-color-blue);
 }
 .adres-contact a {
