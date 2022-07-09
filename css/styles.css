@@ -138,11 +138,16 @@ address {
 }
 
 .icon.contact {
-  width: 16px;
-  height: 14px;
   fill: currentColor;
   margin-right: 10px;
-  text-align: center;
+}
+.icon.contact.tel {
+  width: 10px;
+  height: 16px;
+}
+.icon.contact.email {
+  width: 16px;
+  height: 12px;
 }
 .contact-item:hover,
 .navigate.link:hover,
@@ -171,6 +176,7 @@ address {
   padding-bottom: 200px;
   text-align: center;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66), url(../images/Img.jpg);
+  position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -283,13 +289,13 @@ section.activity {
 .team-item {
   margin-right: 30px;
   background-color: var(--background-color);
-  /* padding-top: 30px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-item-into {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -305,13 +311,9 @@ section.activity {
   color: var(--navigate-contacts-color);
   margin-top: 10px;
 }
-/* socialmedia-item
-
-*/
 .social-media-list {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 30px;
   justify-content: center;
   margin-left: 0;
 }
@@ -370,7 +372,6 @@ section.activity {
 .clients-link:hover {
   color: var(--logo-first-part-color-blue);
   border: 1px solid var(--logo-first-part-color-blue);
-  border-radius: 4px;
 }
 .clients-icon {
   fill: currentColor;
@@ -415,6 +416,9 @@ section.activity {
   margin-top: 0;
 }
 
+.portfolio-link {
+  display: block;
+}
 .container-into {
   padding-left: 24px;
   padding-right: 24px;
@@ -455,8 +459,8 @@ section.activity {
 .btn-list {
   margin-right: 8px;
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* Footer */
@@ -499,10 +503,9 @@ section.activity {
   line-height: 1.19;
   color: var(--background-color);
 }
-.footer-social-media {
-  width: 206px;
-  padding-top: 15px;
-  justify-content: center;
+.adress-item.link:hover,
+.adress-item.link:focus {
+  color: var(--background-color);
 }
 .address-cont {
   margin-right: 70px;
